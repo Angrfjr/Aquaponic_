@@ -23,7 +23,139 @@
             line-height: 45px;
             font-family: 'Inter', sans-serif;
             padding: 0 25px;
+            width: 50px; /* Ubah ukuran lebar sesuai kebutuhan Anda */
+            height: 50px; /* Ubah ukuran tinggi sesuai kebutuhan Anda */
         }
+
+        .brand-logo img.dark-logo {
+            width: 130px; /* Ubah ukuran lebar sesuai kebutuhan Anda */
+            height: 60px; /* Ubah ukuran tinggi sesuai kebutuhan Anda */
+        }
+
+        .sidebar-small-cap {
+            margin-top: 15px; /* Ubah jarak dari atas sesuai kebutuhan Anda */
+        }
+
+        .sidebar-small-cap {
+            margin-top: 20px; /* Sesuaikan dengan jarak yang Anda inginkan dari atas */
+        }
+
+        .dashboard-button {
+            background-color: #155C72;
+            color: #ffffff;
+            border: 2px solid #155C72;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            line-height: 15px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+            text-align: center; /* Memastikan teks berada di tengah tombol */
+            font-size: 14px; /* Ubah ukuran font sesuai kebutuhan Anda */
+        }
+
+        .dashboard-button.active {
+            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF; /* Warna border tombol saat aktif */
+        }
+
+        #overview-button.active {
+            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF; /* Warna border tombol saat aktif */
+        }
+
+
+        #analysis-button.active {
+            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF; /* Warna border tombol saat aktif */
+        }
+
+
+        /* .dashboard-button:hover {
+            background-color: #31ACAF; /* Warna latar belakang saat kursor berada di atas tombol */
+            border-color: #31ACAF; /* Warna border tombol saat aktif */
+        
+            .dropdown-menu.dropdown-menu-right {
+            margin-top: -200px; /* Sesuaikan jarak ke atas sesuai kebutuhan Anda */
+        }
+
+
+        /* Untuk Gauge */
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 20px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #16425C;
+        }
+
+        /* input:focus + .slider {
+            box-shadow: 0 0 0px #16425C;
+        } */
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* .slider.round {
+            border-radius: 4px;
+        } */
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .toggle-label {
+            margin-right: 10px; /* Atur jarak dari saklar */
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+
+
+
+
     </style>
     <!-- Site favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/back/vendors/images/apple-touch-icon.png" />
@@ -288,8 +420,8 @@
     <div class="left-side-bar">
         <div class="brand-logo">
             <a href="">
-                <img src="/back/vendors/images/logoaqua.png" alt="" class="dark-logo" />
-                <img src="/back/vendors/images/dark.png" alt="" class="light-logo" />
+                <img src="/back/vendors/images/logotelkom.png" alt="" class="dark-logo" />
+                
             </a>
             <div class="close-sidebar" data-toggle="left-sidebar-close">
                 <i class="ion-close-round"></i>
@@ -373,28 +505,62 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
                             <div class="title">
-                                <h4>blank</h4>
+                                <h4>
+                                <button class="dashboard-button active" id="realtime-button" href="#">Realtime</button>
+                                <button class="dashboard-button" id="overview-button" href="#">Overview</button>
+                                <button class="dashboard-button" id="analysis-button" href="#">Analysis</button>
+                                </h4>
                             </div>
-                            <nav aria-label="breadcrumb" role="navigation">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item active" aria-current="page">
-                                        blank
-                                    </li>
-                                </ol>
-                            </nav>
+                            <div class="toggle-switch">
+                                <span class="toggle-label">Gauge</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 text-right">
+                        <div class="col-md-3 col-sm-12 text-right">
                             <div class="dropdown">
                                 <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                    January 2018
+                                    All Indicators
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Export List</a>
-                                    <a class="dropdown-item" href="#">Policies</a>
-                                    <a class="dropdown-item" href="#">View Assets</a>
+                                    <a class="dropdown-item" href="#">Battery (%)</a>
+                                    <a class="dropdown-item" href="#">Co2 (ppm)</a>
+                                    <a class="dropdown-item" href="#">Distance (mm)</a>
+                                    <a class="dropdown-item" href="#">Formaldehida (mg/m3)</a>
+                                    <a class="dropdown-item" href="#">Intensitas Cahaya (scale)</a>
+                                    <a class="dropdown-item" href="#">Kelembapan (%)</a>
+                                    <a class="dropdown-item" href="#">PM2.5 (μg/m3)</a>
+                                    <a class="dropdown-item" href="#">Tekanan Udara (hPa)</a>
+                                    <a class="dropdown-item" href="#">Temperature (℃)</a>
+                                    <a class="dropdown-item" href="#">Total Volatile Organic Compounds (IAQ)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-12 text-right">
+                            <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                    All Status
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Bahaya</a>
+                                    <a class="dropdown-item" href="#">Good</a>
+                                    <a class="dropdown-item" href="#">Waspada</a>
+                                    <a class="dropdown-item" href="#">Offline</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12 text-right">
+                            <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                    More Filters
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Bahaya</a>
+                                    <a class="dropdown-item" href="#">Good</a>
+                                    <a class="dropdown-item" href="#">Waspada</a>
+                                    <a class="dropdown-item" href="#">Offline</a>
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,7 @@
 
         .centered-image {
             display: block;
-            margin: 0 auto 40px;
+            margin: 0 auto 20px;
             /* Mengatur jarak bawah antara gambar dan elemen berikutnya */
         }
 
@@ -36,6 +36,86 @@
             justify-content: flex-start;
             /* Menaruh konten di tengah kotak */
         }
+        .login-box {
+            margin-top: 60px !important; /* Menggunakan !important untuk memastikan gaya ini diutamakan */
+        }
+
+        .input-group.custom {
+            margin-top: 40px; /* Sesuaikan dengan seberapa jauh Anda ingin menggeser elemen input ke bawah */
+        }
+
+        .input-group.custom {
+            margin-top: 40px; /* Sesuaikan dengan seberapa jauh Anda ingin menggeser elemen input ke bawah */
+        }
+
+        .input-group.custom input.form-control {
+            width: 100%; /* Mengatur lebar input ke 100% dari kotak input */
+            height: 40px; /* Mengatur tinggi input */
+            border: 2px solid #FFFFFF; /* Mengatur warna border input */
+            border-radius: 40px; /* Mengatur border radius input */
+        }
+
+        .input-group.custom input.form-control::placeholder {
+            color: #9a9a9a; /* Mengatur warna teks placeholder */
+        }
+
+        .input-group.custom .input-group-text {
+            background-color: #FFFFFF; /* Mengatur warna latar belakang ikon input */
+            border: 1px solid #FFFFFF; /* Mengatur border ikon input */
+            border-radius: 40px; /* Mengatur border radius ikon input */
+            margin-right: 10px; /* Menggeser ikon ke kiri sejauh 10px */
+        }
+
+        .input-group.custom .input-group-text i {
+            color: #000000; /* Mengatur warna ikon input */
+        }
+
+        .input-group.custom + .input-group.custom {
+            margin-top: 10px; /* Sesuaikan jarak antara dua kotak input di sini */
+        }
+
+        .custom-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: #3496cb; /* Ganti dengan warna yang Anda inginkan */
+            border: 2px solid #3496cb;
+        }
+
+        .custom-control.custom-checkbox .custom-control-input:not(:checked) ~ .custom-control-label::before {
+            border: 2px solid #16425C; /* Warna tepi garis ketika belum dicentang */
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0px auto 0; /* Mengatur jarak atas antara gambar dan elemen di atasnya */
+        }
+
+        .custom-control.custom-checkbox {
+            margin-top: 20px; /* Sesuaikan dengan jarak bawah yang Anda inginkan */
+        }
+
+
+        .forgot-password a {
+            font-size: 14px; /* Ganti dengan ukuran font yang Anda inginkan */
+            color: #000000; /* Ganti dengan warna yang Anda inginkan */
+            /* Contoh lain:
+            font-weight: bold; // Untuk membuat teks menjadi tebal
+            text-decoration: underline; // Untuk menambahkan garis bawah
+            */
+        }
+
+        .forgot-password {
+            margin-top: 23px; /* Sesuaikan dengan jarak bawah yang Anda inginkan */
+        }
+
+        .btn.btn-primary.btn-lg.btn-block {
+            background-color: #16425C; /* Ganti dengan warna latar belakang yang diinginkan */
+            border: 2px solid #16425C; /* Ganti dengan warna border yang diinginkan dan ketebalan yang diinginkan */
+        }
+
+
+
+
+
+
     </style>
 
     <!-- Site favicon -->
@@ -61,7 +141,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6 col-lg-7"></div>
                 <div class="col-md-6 col-lg-5">
-                    <div class="login-box bg-white box-shadow border-radius-10">
+                    <div class="login-box bg-grey box-shadow border-radius-10">
                         <img src="/back/vendors/images/logo.png" alt="Logo Evomo" class="centered-image">
                         <span></span>
                         <form action="{{ route('admin.login_handler') }}" method="POST">
@@ -107,15 +187,18 @@
                                     </div>
                                 </div>
                                 <div class="col-6">
+                                    <div class="forgot-password">
+                                        <a href="forgot-password.html">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
 
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="input-group mb-0">
-
 											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
-
                                     </div>
 
                                 </div>
