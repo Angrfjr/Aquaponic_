@@ -23,21 +23,27 @@
             line-height: 45px;
             font-family: 'Inter', sans-serif;
             padding: 0 25px;
-            width: 50px; /* Ubah ukuran lebar sesuai kebutuhan Anda */
-            height: 50px; /* Ubah ukuran tinggi sesuai kebutuhan Anda */
+            width: 50px;
+            /* Ubah ukuran lebar sesuai kebutuhan Anda */
+            height: 50px;
+            /* Ubah ukuran tinggi sesuai kebutuhan Anda */
         }
 
         .brand-logo img.dark-logo {
-            width: 130px; /* Ubah ukuran lebar sesuai kebutuhan Anda */
-            height: 60px; /* Ubah ukuran tinggi sesuai kebutuhan Anda */
+            width: 130px;
+            /* Ubah ukuran lebar sesuai kebutuhan Anda */
+            height: 60px;
+            /* Ubah ukuran tinggi sesuai kebutuhan Anda */
         }
 
         .sidebar-small-cap {
-            margin-top: 15px; /* Ubah jarak dari atas sesuai kebutuhan Anda */
+            margin-top: 15px;
+            /* Ubah jarak dari atas sesuai kebutuhan Anda */
         }
 
         .sidebar-small-cap {
-            margin-top: 20px; /* Sesuaikan dengan jarak yang Anda inginkan dari atas */
+            margin-top: 20px;
+            /* Sesuaikan dengan jarak yang Anda inginkan dari atas */
         }
 
         .dashboard-button {
@@ -48,34 +54,47 @@
             padding: 10px 20px;
             margin: 5px;
             cursor: pointer;
-            line-height: 15px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
-            text-align: center; /* Memastikan teks berada di tengah tombol */
-            font-size: 14px; /* Ubah ukuran font sesuai kebutuhan Anda */
+            line-height: 15px;
+            /* Sesuaikan tinggi sesuai kebutuhan Anda */
+            text-align: center;
+            /* Memastikan teks berada di tengah tombol */
+            font-size: 14px;
+            /* Ubah ukuran font sesuai kebutuhan Anda */
         }
 
         .dashboard-button.active {
-            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
-            border-color: #31ACAF; /* Warna border tombol saat aktif */
+            background-color: #31ACAF;
+            /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF;
+            /* Warna border tombol saat aktif */
         }
 
         #overview-button.active {
-            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
-            border-color: #31ACAF; /* Warna border tombol saat aktif */
+            background-color: #31ACAF;
+            /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF;
+            /* Warna border tombol saat aktif */
         }
 
 
         #analysis-button.active {
-            background-color: #31ACAF; /* Warna latar belakang tombol saat aktif */
-            border-color: #31ACAF; /* Warna border tombol saat aktif */
+            background-color: #31ACAF;
+            /* Warna latar belakang tombol saat aktif */
+            border-color: #31ACAF;
+            /* Warna border tombol saat aktif */
         }
 
 
-        /* .dashboard-button:hover {
-            background-color: #31ACAF; /* Warna latar belakang saat kursor berada di atas tombol */
-            border-color: #31ACAF; /* Warna border tombol saat aktif */
-        
-            .dropdown-menu.dropdown-menu-right {
-            margin-top: -200px; /* Sesuaikan jarak ke atas sesuai kebutuhan Anda */
+        .dashboard-button:hover {
+            background-color: #31ACAF;
+            /* Warna latar belakang saat kursor berada di atas tombol */
+            border-color: #31ACAF;
+            /* Warna border tombol saat aktif */
+        }
+
+        .dropdown-menu.dropdown-menu-right {
+            margin-top: -200px;
+            /* Sesuaikan jarak ke atas sesuai kebutuhan Anda */
         }
 
 
@@ -124,7 +143,7 @@
             border-radius: 50%;
         }
 
-        input:checked + .slider {
+        input:checked+.slider {
             background-color: #16425C;
         }
 
@@ -132,7 +151,7 @@
             box-shadow: 0 0 0px #16425C;
         } */
 
-        input:checked + .slider:before {
+        input:checked+.slider:before {
             -webkit-transform: translateX(26px);
             -ms-transform: translateX(26px);
             transform: translateX(26px);
@@ -147,15 +166,11 @@
         }
 
         .toggle-label {
-            margin-right: 10px; /* Atur jarak dari saklar */
+            margin-right: 10px;
+            /* Atur jarak dari saklar */
             margin-left: 10px;
             font-size: 20px;
         }
-
-
-
-
-
     </style>
     <!-- Site favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/back/vendors/images/apple-touch-icon.png" />
@@ -242,81 +257,6 @@
                     </a>
                 </div>
             </div>
-            <div class="user-notification">
-                <div class="dropdown">
-                    <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
-                        <i class="icon-copy dw dw-notification"></i>
-                        <span class="badge notification-active"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <div class="notification-list mx-h-350 customscroll">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/img.jpg" alt="" />
-                                        <h3>John Doe</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/photo1.jpg" alt="" />
-                                        <h3>Lea R. Frith</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/photo2.jpg" alt="" />
-                                        <h3>Erik L. Richards</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/photo3.jpg" alt="" />
-                                        <h3>John Doe</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/photo4.jpg" alt="" />
-                                        <h3>Renee I. Hansen</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="/back/vendors/images/img.jpg" alt="" />
-                                        <h3>Vicki M. Coleman</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit, sed...
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             @if ( Auth::guard('admin')->check() )
             <div class="user-info-dropdown">
                 <div class="dropdown">
@@ -421,7 +361,7 @@
         <div class="brand-logo">
             <a href="">
                 <img src="/back/vendors/images/logotelkom.png" alt="" class="dark-logo" />
-                
+
             </a>
             <div class="close-sidebar" data-toggle="left-sidebar-close">
                 <i class="ion-close-round"></i>
@@ -430,7 +370,7 @@
         <div class="menu-block customscroll">
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
-                <li>
+                    <li>
                         <div class="sidebar-small-cap">MENU</div>
                     </li>
                     <li>
@@ -440,17 +380,16 @@
                         </a>
                     </li>
                     <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-activity"></span
-								><span class="mtext">Analysis</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="highchart.html">Analysis 1</a></li>
-								<li><a href="knob-chart.html">Analysis 2</a></li>
-								<li><a href="jvectormap.html">Analysis 3</a></li>
-								<li><a href="apexcharts.html">Analysis 4</a></li>
-							</ul>
-						</li>
+                        <a href="javascript:;" class="dropdown-toggle">
+                            <span class="micon bi bi-activity"></span><span class="mtext">Analysis</span>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="highchart.html">Analysis 1</a></li>
+                            <li><a href="knob-chart.html">Analysis 2</a></li>
+                            <li><a href="jvectormap.html">Analysis 3</a></li>
+                            <li><a href="apexcharts.html">Analysis 4</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="calendar.html" class="dropdown-toggle no-arrow">
                             <span class="micon bi bi-clipboard-data"></span>
@@ -506,9 +445,9 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="title">
                                 <h4>
-                                <button class="dashboard-button active" id="realtime-button" href="#">Realtime</button>
-                                <button class="dashboard-button" id="overview-button" href="#">Overview</button>
-                                <button class="dashboard-button" id="analysis-button" href="#">Analysis</button>
+                                    <button class="dashboard-button active" id="realtime-button" href="#">Realtime</button>
+                                    <button class="dashboard-button" id="overview-button" href="#">Overview</button>
+                                    <button class="dashboard-button" id="analysis-button" href="#">Analysis</button>
                                 </h4>
                             </div>
                             <div class="toggle-switch">
@@ -571,8 +510,7 @@
                 </div>
             </div>
             <div class="footer-wrap pd-20 mb-20 card-box">
-                DeskApp - Bootstrap 4 Admin Template By
-                <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
+                Dashboard - Aquaponic By TCUC
             </div>
         </div>
     </div>
