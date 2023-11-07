@@ -85,15 +85,12 @@
         }
 
 
-        .dashboard-button:hover {
-            background-color: #31ACAF;
-            /* Warna latar belakang saat kursor berada di atas tombol */
-            border-color: #31ACAF;
-            /* Warna border tombol saat aktif */
-        }
+        /* .dashboard-button:hover {
+            background-color: #31ACAF; /* Warna latar belakang saat kursor berada di atas tombol */
+        /* Warna border tombol saat aktif */
 
         .dropdown-menu.dropdown-menu-right {
-            margin-top: -200px;
+            margin-top: 0px;
             /* Sesuaikan jarak ke atas sesuai kebutuhan Anda */
         }
 
@@ -102,6 +99,7 @@
         .toggle-switch {
             display: flex;
             align-items: center;
+            margin-top: 10px;
         }
 
         .switch {
@@ -257,6 +255,81 @@
                     </a>
                 </div>
             </div>
+            <div class="user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                        <i class="icon-copy dw dw-notification"></i>
+                        <span class="badge notification-active"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="notification-list mx-h-350 customscroll">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/img.jpg" alt="" />
+                                        <h3>John Doe</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/photo1.jpg" alt="" />
+                                        <h3>Lea R. Frith</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/photo2.jpg" alt="" />
+                                        <h3>Erik L. Richards</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/photo3.jpg" alt="" />
+                                        <h3>John Doe</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/photo4.jpg" alt="" />
+                                        <h3>Renee I. Hansen</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/back/vendors/images/img.jpg" alt="" />
+                                        <h3>Vicki M. Coleman</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit, sed...
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             @if ( Auth::guard('admin')->check() )
             <div class="user-info-dropdown">
                 <div class="dropdown">
@@ -359,7 +432,7 @@
 
     <div class="left-side-bar">
         <div class="brand-logo">
-            <a href="">
+            <a href="{{ route('admin.home') }}">
                 <img src="/back/vendors/images/logotelkom.png" alt="" class="dark-logo" />
 
             </a>
@@ -370,6 +443,64 @@
         <div class="menu-block customscroll">
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
+
+                    @if ( Route::is('admin.*') )
+                    <li>
+                        <div class="sidebar-small-cap">MENU</div>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.dashboard') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.dashboard') ? 'active' : '' }}">
+                            <span class="micon bi bi-bar-chart-line"></span>
+                            <span class="mtext">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('admin.analisis') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.analisis') ? 'active' : '' }}">
+                            <span class="micon bi bi-activity"></span>
+                            <span class="mtext">Analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-clipboard-data"></span>
+                            <span class="mtext">Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-pc-display"></span>
+                            <span class="mtext">Device</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="sidebar-small-cap">SETTING</div>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi dw bi-bell"></span>
+                            <span class="mtext">Alert</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-person"></span>
+                            <span class="mtext">List Data User</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-arrows-angle-contract"></span>
+                            <span class="mtext">Treshold</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                            <span class="micon bi bi-code"></span>
+                            <span class="mtext">Indicator</span>
+                        </a>
+                    </li>
+                    @else
                     <li>
                         <div class="sidebar-small-cap">MENU</div>
                     </li>
@@ -430,6 +561,9 @@
                             <span class="mtext">Indicator</span>
                         </a>
                     </li>
+                    @endif
+
+
 
                 </ul>
             </div>
@@ -440,74 +574,7 @@
     <div class="main-container">
         <div class="pd-ltr-20 xs-pd-20-10">
             <div class="min-height-200px">
-                <div class="page-header">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="title">
-                                <h4>
-                                    <button class="dashboard-button active" id="realtime-button" href="#">Realtime</button>
-                                    <button class="dashboard-button" id="overview-button" href="#">Overview</button>
-                                    <button class="dashboard-button" id="analysis-button" href="#">Analysis</button>
-                                </h4>
-                            </div>
-                            <div class="toggle-switch">
-                                <span class="toggle-label">Gauge</span>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-12 text-right">
-                            <div class="dropdown">
-                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                    All Indicators
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Battery (%)</a>
-                                    <a class="dropdown-item" href="#">Co2 (ppm)</a>
-                                    <a class="dropdown-item" href="#">Distance (mm)</a>
-                                    <a class="dropdown-item" href="#">Formaldehida (mg/m3)</a>
-                                    <a class="dropdown-item" href="#">Intensitas Cahaya (scale)</a>
-                                    <a class="dropdown-item" href="#">Kelembapan (%)</a>
-                                    <a class="dropdown-item" href="#">PM2.5 (μg/m3)</a>
-                                    <a class="dropdown-item" href="#">Tekanan Udara (hPa)</a>
-                                    <a class="dropdown-item" href="#">Temperature (℃)</a>
-                                    <a class="dropdown-item" href="#">Total Volatile Organic Compounds (IAQ)</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1 col-sm-12 text-right">
-                            <div class="dropdown">
-                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                    All Status
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Bahaya</a>
-                                    <a class="dropdown-item" href="#">Good</a>
-                                    <a class="dropdown-item" href="#">Waspada</a>
-                                    <a class="dropdown-item" href="#">Offline</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-12 text-right">
-                            <div class="dropdown">
-                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                                    More Filters
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Bahaya</a>
-                                    <a class="dropdown-item" href="#">Good</a>
-                                    <a class="dropdown-item" href="#">Waspada</a>
-                                    <a class="dropdown-item" href="#">Offline</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
                     @yield('content')
-                </div>
             </div>
             <div class="footer-wrap pd-20 mb-20 card-box">
                 Dashboard - Aquaponic By TCUC
