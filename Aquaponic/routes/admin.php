@@ -15,5 +15,6 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::post('/logout_handler',[AdminController::class,'logoutHandler'])->name('logout_handler');
         Route::view('/analisis','back.pages.admin.analisis')->name('analisis');
         Route::view('/dashboard','back.pages.admin.dashboard')->name('dashboard');
+        Route::view('/report','back.pages.admin.report')->name('report');
     });
 });
