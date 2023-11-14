@@ -9,7 +9,7 @@
             <div class="title">
                 <h4>
                     <button class="dashboard-button active" id="realtime-button" href="#">Realtime</button>
-                    <button class="dashboard-button" id="overview-button" onclick="{{ route('admin.analisis') }}">Overview</button>
+                    <button class="dashboard-button" id="overview-button" href="{{ route('admin.analisis') }}">Overview</button>
                     <button class="dashboard-button" id="analysis-button" href="#">Analysis</button>
                 </h4>
             </div>
