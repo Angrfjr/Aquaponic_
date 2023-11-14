@@ -71,7 +71,7 @@
 
 <div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
     <!-- Isi bagian content -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-right: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-left: 10px;">
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -135,7 +135,7 @@
         <image x="77" y="78" width="30" height="20" xlink:href="\back\src\images\co2.png"></image>
         <image x="85" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-right: 10px;" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-left: 10px;" >
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -143,7 +143,7 @@
         <rect x="0.25" y="0.25" width="240" height="17" fill="#FFFF00" stroke="black" stroke-width="1"></rect>
 
         <!-- Teks dan Gambar tetap seperti sebelumnya -->
-        <text x="122.5" y="35" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sensor Lingkungan 1</text>
+        <text x="122.5" y="35" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sensor Lingkungan 10</text>
         <text x="122.5" y="55" font-family="Arial" font-size="12" fill="#6f6f6f" text-anchor="middle" dominant-baseline="middle">Last Update: 11/11/23 13:24</text>
         <text x="122.5" y="90" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle">Co2</text>
         <text x="122.5" y="125" font-family="Arial" font-size="26" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">529 Ton</text>
@@ -151,7 +151,7 @@
         <image x="77" y="78" width="30" height="20" xlink:href="\back\src\images\co2.png"></image>
         <image x="85" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="175" viewBox="0 0 265 175" fill="none" style="margin-right: 10px;" style="padding-top: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="195" viewBox="0 0 265 175" fill="none" style="margin-right: 10px;" top: 80px;>
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -159,7 +159,23 @@
         <rect x="0.25" y="0.25" width="240" height="17" fill="#FFFF00" stroke="black" stroke-width="1"></rect>
 
         <!-- Teks dan Gambar tetap seperti sebelumnya -->
-        <text x="122.5" y="35" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sensor Lingkungan 1</text>
+        <text x="122.5" y="35" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sensor Lingkungan 2</text>
+        <text x="122.5" y="55" font-family="Arial" font-size="12" fill="#6f6f6f" text-anchor="middle" dominant-baseline="middle">Last Update: 11/11/23 13:24</text>
+        <text x="122.5" y="90" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle">Co2</text>
+        <text x="122.5" y="125" font-family="Arial" font-size="26" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">529 Ton</text>
+        <text x="122.5" y="155" font-family="Arial" font-size="12" fill="black" text-anchor="middle" dominant-baseline="middle">2 Ton</text>
+        <image x="77" y="78" width="30" height="20" xlink:href="\back\src\images\co2.png"></image>
+        <image x="85" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="195" viewBox="0 0 265 175" fill="none" style="margin-right: -10px;">
+        <!-- Kotak luar dengan border radius 10 dan border width 2 -->
+        <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
+
+        <!-- Kotak dalam dengan border radius 10 dan border width 2 -->
+        <rect x="0.25" y="0.25" width="240" height="17" fill="#FFFF00" stroke="black" stroke-width="1"></rect>
+
+        <!-- Teks dan Gambar tetap seperti sebelumnya -->
+        <text x="122.5" y="35" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">Sensor Lingkungan 3</text>
         <text x="122.5" y="55" font-family="Arial" font-size="12" fill="#6f6f6f" text-anchor="middle" dominant-baseline="middle">Last Update: 11/11/23 13:24</text>
         <text x="122.5" y="90" font-family="Arial" font-size="16" fill="black" text-anchor="middle" dominant-baseline="middle">Co2</text>
         <text x="122.5" y="125" font-family="Arial" font-size="26" fill="black" text-anchor="middle" dominant-baseline="middle" font-weight="bold">529 Ton</text>
