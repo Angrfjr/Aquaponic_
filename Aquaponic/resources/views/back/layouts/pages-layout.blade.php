@@ -393,7 +393,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.device') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.device') ? 'active' : '' }}">
                             <span class="micon bi bi-pc-display"></span>
                             <span class="mtext">Device</span>
                         </a>
@@ -403,25 +403,25 @@
                         <div class="sidebar-small-cap">SETTING</div>
                     </li>
                     <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.alert') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.alert') ? 'active' : '' }}">
                             <span class="micon bi dw bi-bell"></span>
                             <span class="mtext">Alert</span>
                         </a>
                     </li>
                     <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.list') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.list') ? 'active' : '' }}">
                             <span class="micon bi bi-person"></span>
                             <span class="mtext">List Data User</span>
                         </a>
                     </li>
                     <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.treshold') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.treshold') ? 'active' : '' }}">
                             <span class="micon bi bi-arrows-angle-contract"></span>
                             <span class="mtext">Treshold</span>
                         </a>
                     </li>
                     <li>
-                        <a href="calendar.html" class="dropdown-toggle no-arrow">
+                        <a href="{{ route('admin.indicator') }}" class="dropdown-toggle no-arrow {{ Route::is('admin.indicator') ? 'active' : '' }}">
                             <span class="micon bi bi-code"></span>
                             <span class="mtext">Indicator</span>
                         </a>

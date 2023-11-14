@@ -16,5 +16,10 @@ Route::prefix('admin')->name('admin.')->group(function(){
         Route::view('/analisis','back.pages.admin.analisis')->name('analisis');
         Route::view('/dashboard','back.pages.admin.dashboard')->name('dashboard');
         Route::view('/report','back.pages.admin.report')->name('report');
+        Route::view('/device','back.pages.admin.device')->name('device');
+        Route::view('/alert','back.pages.admin.alert')->name('alert');
+        Route::view('/list','back.pages.admin.list')->name('list');
+        Route::view('/treshold','back.pages.admin.treshold')->name('treshold');
+        Route::view('/indicator','back.pages.admin.indicator')->name('indicator');
     });
 });
