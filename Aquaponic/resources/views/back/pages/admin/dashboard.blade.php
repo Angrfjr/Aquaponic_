@@ -151,7 +151,7 @@
         <image x="20" y="81" width="20" height="15" xlink:href="\back\src\images\co2.png"></image>
         <image x="85" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="175" viewBox="0 0 265 175" fill="none" style="margin-left: 10px;" margin-right: 2px;>
+    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="175" viewBox="0 0 265 175" fill="none" style="margin-left: 10px;">
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -215,7 +215,7 @@
         <image x="87" y="81" width="20" height="15" xlink:href="\back\src\images\batery.png"></image>
         <image x="88" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="175" viewBox="0 0 265 175" fill="none" style="margin-left: 10px;" margin-right: 2px;>
+    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="195" viewBox="0 0 245 175" fill="none" style="margin-left: 10px;">
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -231,7 +231,7 @@
         <image x="79" y="81" width="20" height="15" xlink:href="\back\src\images\kelembapan.png"></image>
         <image x="83" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-left: -10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="265" height="175" viewBox="0 0 265 175" fill="none" style="margin-left: 10px;">
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 
@@ -247,7 +247,7 @@
         <image x="87" y="81" width="20" height="15" xlink:href="\back\src\images\batery.png"></image>
         <image x="88" y="146" width="25" height="15" xlink:href="\back\src\images\naik.png"></image>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-left: 10px;" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="175" viewBox="0 0 245 175" fill="none" style="margin-left: -10px;" >
         <!-- Kotak luar dengan border radius 10 dan border width 2 -->
         <rect x="0.25" y="0.25" width="240" height="172" stroke="black" stroke-width="1"></rect>
 

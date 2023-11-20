@@ -74,14 +74,24 @@
         <div class="form-group row">
             <label class="col-sm-12 col-md-2 col-form-label">Time</label>
             <div class="col-sm-12 col-md-10">
-                <button type="button" class="btn btn-primary">Daily</button>
-                <button type="button" class="btn btn-primary">Hourly</button>
-            </div>
+            <button type="button" class="btn btn-primary" onclick="toggleActive(this)">Daily</button>
+            <button type="button" class="btn btn-primary" onclick="toggleActive(this)">Hourly</button>
         </div>
         <div class="col-sm-12 col-md-10">
                 <button type="button" class="btn btn-outline-secondary">Generate</button>
                 <button type="button" class="btn btn-outline-secondary">Save As Scheduled Report</button>
             </div>
     </form>
+    <script>
+    function toggleActive(button) {
+        // Remove 'active' class from all buttons
+        document.querySelectorAll('.btn-primary').forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+    }
+</script>
 </div>
 @endsection
