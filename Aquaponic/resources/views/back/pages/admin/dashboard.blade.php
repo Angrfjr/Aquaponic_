@@ -21,7 +21,7 @@
                 </label>
             </div>
         </div>
-        <div class="col-md-3 col-sm-12 text-right">
+        <div class="col-md-2 col-sm-12 text-right" style="margin-right: -10px;">
             <div class="dropdown">
                 <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     All Indicators
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-1 col-sm-12 text-right">
+        <div class="col-md-1 col-sm-12 text-right" style="margin-right: 40px;">
             <div class="dropdown">
                 <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     All Status
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-12 text-right">
+        <div class="col-md-2 col-sm-12 text-right" style="margin-right: 5px;">
             <div class="dropdown">
                 <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                     More Filters

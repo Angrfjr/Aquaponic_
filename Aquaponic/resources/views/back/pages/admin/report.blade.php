@@ -77,12 +77,50 @@
             <button type="button" class="btn btn-primary" onclick="toggleActive(this)">Daily</button>
             <button type="button" class="btn btn-primary" onclick="toggleActive(this)">Hourly</button>
         </div>
+        </div>
         <div class="col-sm-12 col-md-10">
                 <button type="button" class="btn btn-outline-secondary">Generate</button>
                 <button type="button" class="btn btn-outline-secondary">Save As Scheduled Report</button>
             </div>
     </form>
     <script>
+    function toggleActive(button) {
+        // Remove 'active' class from all buttons
+        document.querySelectorAll('.btn-primary').forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+    }
+
+     $(document).ready(function () {
+        // Initialize the datetimepicker for date range selection
+        $('#date-range').daterangepicker({
+            opens: 'left', // Adjust the calendar dropdown position
+            autoApply: true, // Automatically apply the date range when selecting
+            showDropdowns: true, // Show year and month dropdowns
+            linkedCalendars: false, // Whether the two calendars should be linked together
+            isInvalidDate: function(date) {
+                // Add custom invalid date logic if needed
+                // For example, disable dates before today:
+                return date.isBefore(moment(), 'day');
+            },
+            locale: {
+                format: 'YYYY-MM-DD', // Set your desired date format
+                separator: ' - ',
+                applyLabel: 'Choose',
+                cancelLabel: 'Cancel',
+                fromLabel: 'From',
+                toLabel: 'To',
+                customRangeLabel: 'Custom Range',
+                daysOfWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                firstDay: 1 // Start with Monday
+            }
+        });
+    });
+
     function toggleActive(button) {
         // Remove 'active' class from all buttons
         document.querySelectorAll('.btn-primary').forEach(function (btn) {
