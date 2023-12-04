@@ -78,7 +78,7 @@
             <button type="button" class="btn btn-primary" onclick="toggleActive(this)">Hourly</button>
         </div>
         </div>
-        <div class="col-sm-12 col-md-10">
+        <div class="col-sm-12 col-md-10" style="margin-left: 175px;">
                 <button type="button" class="btn btn-outline-secondary">Generate</button>
                 <button type="button" class="btn btn-outline-secondary">Save As Scheduled Report</button>
             </div>

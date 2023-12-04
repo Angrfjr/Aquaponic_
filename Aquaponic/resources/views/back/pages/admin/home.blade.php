@@ -28,9 +28,9 @@
 						<div class="col-md-8">
 							<h4 class="font-20 weight-500 mb-10 text-capitalize">
 								Welcome back
-								<div class="weight-600 font-30 text-blue">Admin!</div>
+								<div class="weight-900 font-30 text-blue">Admin!</div>
 							</h4>
-							<p class="font-18 max-width-600">
+							<p class="font-18 max-width-1000">
 								Ini adalah Dashboard Pemantauan Inovasi Aquaponic Wapres dari ITDRI.
                                 Disini anda dapat melihat keseluruhan aktifitas terbaru terkait data
                                 Sensor, Chamber, dan Battery.

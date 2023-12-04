@@ -25,106 +25,132 @@
     function refreshPage() {
         location.reload(true); // Reload the page
     }
-    function refreshPage() {
-        location.reload(true);
+
+    // Open modal function
+    function openModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'block';
     }
 
-    function refreshPage() {
-        location.reload(true);
+    // Close modal function
+    function closeModal() {
+        var modal = document.getElementById('myModal');
+        modal.style.display = 'none';
     }
 
-    function showPopup() {
-        document.getElementById('popup').style.display = 'block';
-    }
-
-    function hidePopup() {
-        document.getElementById('popup').style.display = 'none';
-    }
+    // Close modal when clicking outside the modal content
+    window.onclick = function(event) {
+        var modal = document.getElementById('myModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
     
-
 </script>
 
 <style>
-
     .btn-link-condition {
         color : #333;
         cursor: pointer;
         transition: color 0.3s; /* Animasi perubahan warna */
         text-decoration: underline;
     }
+
     .btn-link-condition:hover {
         color: #31ACAF; /* Ubah warna saat dihover sesuai kebutuhan */
         text-decoration: underline;
     }
-    .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    max-height: 80vh; /* Set ketinggian maksimum */
-    overflow-y: auto; /* Biarkan konten di dalam popup dapat di-scroll jika melebihi ketinggian maksimum */
-    width: 950px; /* Ubah lebar sesuai kebutuhan Anda */
-    max-width: 90%; /* Maksimum lebar yang diizinkan */
-    height: 600px; /* Ubah tinggi sesuai kebutuhan Anda */
-    max-height: 90%; /* Maksimum tinggi yang diizinkan */
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 110%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
 
-    .popup .title {
-        font-size: 24px; /* Ukuran font untuk judul pop-up */
-        color: #000000; /* Warna font untuk judul pop-up */
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid #888;
+        width: 55%;
+    }
+
+    /* The Close Button */
+    .close {
+    color: #aaaaaa;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Adjusted CSS for the title inside modal content */
+    .modal-content .title {
+        font-size: 24px;
+        color: #000000;
         padding-top: 20px;
-        text-align: left;
         font-weight: bold;
     }
 
-    .popup .description {
-        font-size: 12px; /* Ukuran font untuk deskripsi pop-up */
+    .modal-content .description {
+        font-size: 14px; /* Ukuran font untuk deskripsi pop-up */
         color: #0000ff; /* Warna font untuk deskripsi pop-up */
         text-align: left;
     }
-
-    .popup button {
-        font-size: 14px; /* Ukuran font untuk tombol tutup pop-up */
-        color: #fff; /* Warna font untuk tombol tutup pop-up */
-        background-color: #31ACAF; /* Warna latar belakang tombol tutup pop-up */
-        border: none;
-        padding: 4px 8px;
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-
-    .popup button:hover {
-        background-color: #21888F; /* Warna latar belakang tombol tutup pop-up saat dihover */
-    }
-
-    .popup2 {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    max-height: 80vh;
-    overflow-y: auto;
-    width: 800px;
-    max-width: 90%;
-    height: 600px;
-    max-height: 90%;
+    #myBtn2 {
+    width: 130px; /* Sesuaikan dengan lebar konten */
+    height: 45px;
+    font-size: 16px;
+    background-color: #e9e9e9;
+    color: black;
+    border: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-    
+#myBtn2:hover {
+    background-color: #dadada;
+}
+
+.clearfix button {
+    border: 2px solid #155C72;
+    padding: 10px 20px;
+    background-color: #155C72;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.clearfix button:hover {
+    background-color: #206f71;
+    border: 2px solid #206f71;
+}
+
+
+</style>
+
+
 </style>
 
 <div class="card bg-white pd-20 mb-30">
@@ -132,33 +158,26 @@
         <div class="pull-left" onclick="refreshPage()" style="cursor: pointer;">
             <span class="btn btn-link-condition">Condition</span>
         </div>
-        <div class="clearfix" style="margin-top: 50px;"> <!-- Tambahkan margin-top untuk memberi jarak antara Condition dan + Device -->
-            <div class="pull-left" onclick="showPopup()" style="cursor: pointer; margin-left: 10px;">
-                <button class="btn btn-primary">+ Device</button>
-            </div>
-            <div class="pull-left" onclick="showSetSectorPopup()" style="cursor: pointer; margin-left: 10px;">
-            <button class="btn btn-primary">
-                <img src="\back\src\images\setting.png" alt="Settings" style="width: 20px; height: 20px; margin-right: 5px;"> Set Sector
-            </button>
-        </div>
+        <div class="clearfix" style="margin-top: 50px;">
+            <button onclick="openModal()">+ Device</button>
         </div>
     </div>
-    
-    
-    <div id="popup" class="popup">
-    <!-- Isi pop-up di sini -->
-    <p class="title">Add Device</p>
-    <p class="description">Description</p>
-    <button onclick="hidePopup()">X</button>
+
+    <!-- Modal content -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p class="title" style="margin-left: 30px;">Add Device</p>
+            <p class="description" style="margin-left: 30px;">Description</p>
     <form>
-        <div class="form-group row">
+        <div class="form-group row" style="margin-left: 5px;">
             <label class="col-sm-12 col-md-10 col-form-label">
                 <span class="text-danger">*</span>Select Device Data Source
             </label>
-            <div class="col-sm-12 col-md-10">
+            <div class="col-sm-12 col-md-10" style="margin-left: 5px;">
                 <div class="clearfix">
                     <div class="pull-left">
-                        <select class="custom-select col-12" required>
+                        <select class="custom-select col-12" style="width: 725px;" required>
                             <option value="" disabled selected>Choose Device</option>
                             <option value="1">Joager One Wifi</option>
                             <option value="2">Joager One Lora</option>
@@ -168,26 +187,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="form-group row" style="margin-bottom: 0px;">
-            <label for="namaLabel" class="col-sm-12 col-md-10 col-form-label">Add Source</label>
+        <div class="form-group row" style="margin-left: 10px; margin-bottom: 10px;">
+        <button id="myBtn2">+ Add Source</button>
         </div>
 
-        <div class="form-group row" style="margin-top: 0px;">
-            <label for="namaLabel" class="col-sm-12 col-md-10 col-form-label">> Nama Label</label>
-            <div class="col-sm-12 col-md-10">
-                <input type="text" class="form-control" id="namaLabel" placeholder="Enter Nama Label">
-            </div>
-        </div>
-
-        <div class="form-group row" style="margin-top: -10px;">
-            <label for="information" class="col-sm-12 col-md-10 col-form-label">> Information</label>
-            <div class="col-sm-12 col-md-10">
-                <input type="text" class="form-control" id="information" placeholder="Enter Information">
-            </div>
-        </div>
-
-        <div class="form-group row">
+        <div class="form-group row" style="margin-left: 10px;">
             <label for="dropdown" class="col-sm-12 col-md-10 col-form-label"><span class="text-danger">*</span>Sector</label>
             <div class="col-sm-12 col-md-10">
                 <select class="custom-select col-12">
@@ -197,7 +201,7 @@
             </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row" style="margin-left: 10px;">
             <label for="dropdown" class="col-sm-12 col-md-10 col-form-label">Data Sending Interval</label>
             <div class="col-sm-12 col-md-10">
                 <select class="custom-select col-12">
@@ -211,39 +215,44 @@
                 </select>
             </div>
         </div>
-        <p class="description">Information</p>
+        <p class="description" style="margin-left: 30px;">Information</p>
 
-        <div class="form-group row" style="margin-top: 0px;">
+        <div class="form-group row" style="margin-left: 10px;">
             <label for="namaLabel" class="col-sm-12 col-md-10 col-form-label"><span class="text-danger">*</span>Device Name</label>
             <div class="col-sm-12 col-md-10">
                 <input type="text" class="form-control" id="namaLabel" placeholder="Enter Nama Label">
             </div>
         </div>
 
-        <div class="form-group row" style="margin-top: -10px;">
+        <div class="form-group row" style="margin-left: 10px;">
             <label for="information" class="col-sm-12 col-md-10 col-form-label">Device Description</label>
             <div class="col-sm-12 col-md-10">
                 <input type="text" class="form-control" id="information" placeholder="Enter Information">
             </div>
-            <div class="form-group row" style="margin-top: 70px;">
-            <div class="col-sm-12 col-md-10 text-right">
+            <div class="form-group row" style="margin-left: -115px; margin-top: 60px;">
+            <div class="col-sm-10 text-right">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </form>
 </div>
 
+<div id="myModal2" class="modal">
+        <div class="form-group row" style="margin-left: 10px;">
+            <label for="namaLabel" class="col-sm-12 col-md-10 col-form-label">Nama Label</label>
+            <div class="col-sm-12 col-md-10">
+                <input type="text" class="form-control" id="namaLabel" placeholder="Enter Nama Label">
+            </div>
+        </div>
 
-<!-- Popup for "Set Sector" -->
-<div id="setSectorPopup" class="popup2" style="display: none;">
-<p class="title">Add Device</p>
-        <!-- Content for the "Set Sector" popup -->
-        <!-- ... -->
-    </div>
-
-
-<div class="footer-content">
-    <!-- Your footer content here -->
+        <div class="form-group row" style="margin-left: 10px;">
+            <label for="information" class="col-sm-12 col-md-10 col-form-label">Information</label>
+            <div class="col-sm-12 col-md-10">
+                <input type="text" class="form-control" id="information" placeholder="Enter Information">
+            </div>
+        </div>
+  </div>
+ 
 </div>
 </div>
 
